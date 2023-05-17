@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8e44ad;
+    color: #fff;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    /* flex-direction: colum n; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* NOTE: We use "overflow" on hidden, because we don't want scroll bars to be shown by default */
+    overflow: hidden;
+    margin: 0;
+}
+
+/* I.05. Styling the counter container: (NOTE: After some adjustment in the body) */
+.counter-container {
+    /* NOTE: First we want to display it flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+
+/* I.06. Styling the counter class: */
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+/* I.07. In case of a small screen we want to add a media query: */
+/* NOTE: We set the body's flex-direction to be a column instead of a row  */
+/* EXTRA-NOTE: We can get rid of the numbers in the divs (in html...) */
+/* AFTER: We're going to do our js in next section (section II.) */
+@media(max-width: 580) {
+    body {
+        flex-direction: column;
+    }
+}
+
+
